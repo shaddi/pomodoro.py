@@ -1,0 +1,36 @@
+pomodoro.py: a little script to help your productivity. (v 0.2)
+
+pomodoro.py is a simple script to help increase your focus and productivity.
+After you run the script, you'll have ten minutes of uninterrupted work time,
+which is enforced by disabling your network adapters. When ten minutes is up,
+you've earned a two minute break, and your network adapters will be brought
+back up. 
+
+To run this, make sure you have the required imports on your system, then 
+modify the interfaces lists below to reflect the names of your system's 
+network adapters. Then run:
+
+         $ sudo ./pomodoro.py &
+
+If you need to kill it, open up another terminal and kill the process (but 
+resist the temptation!). 
+
+- Notes and tips -
+You'll need to run pomodoro.py with sudo so it can have the necessary
+permissions to bring up and take down your network interfaces.
+
+On my Ubuntu setup, sometimes I lose connectivity if I'm connected to both a 
+wired and wireless connection. So, I'll make sure that pomodoro.py only brings 
+up either my wired connection or my wireless, but not both, depending on which
+I'm actually using. 
+
+- Contact the author -
+Shaddi Hasan.
+web: http://sha.ddih.org
+email: shaddih@gmail.com
+
+- License -
+Shaddi Hasan, (c) 2010. 
+You can use this code for any purpose you like, but I'm not responsible if it 
+breaks something you care about. If you extend or modify my software,
+releasing your work under a similar license is appreciated but not required.
